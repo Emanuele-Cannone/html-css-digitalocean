@@ -50,6 +50,18 @@
   border: 1px solid pink;
 }
 
+
+/*classi riutilizzabili*/
+
+.margin_top_0{
+  margin-top: 0;
+}
+
+.margin_bot_0{
+  margin-bottom: 0;
+}
+
+
 /*header*/
 
 .header_top{
@@ -70,3 +82,11 @@
   background-size: cover;
 }
 
+
+/*section loghi*/
+
+#loghi{
+  background-color: #f3f5f9;
+}
+
+/*section deploy*/
