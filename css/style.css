@@ -91,9 +91,15 @@
   background-color: #f3f5f9;
 }
 
-/*section deploy*/
+/*section service*/
 
 #service,
 #get_started{
   background-image: linear-gradient( #0042bb , #001e9a);
+}
+
+/*footer*/
+
+footer{
+  background-color: #031c4e;
 }
