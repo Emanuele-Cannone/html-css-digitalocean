@@ -1,0 +1,72 @@
+/*IMPORTANTE
+
+(<768px) SMARTPHONE XS
+
+(≥768px) TABLET SM
+
+(≥992px) DESKTOP MD
+
+(≥1200px) ALTRO LG*/
+
+/*classi debug*/
+
+.h_50{
+  height: 50px;
+}
+
+.h_70{
+  height: 70px;
+}
+
+.h_100{
+  height: 100px;
+}
+
+.h_150{
+  height: 150px;
+}
+
+.h_200{
+  height: 200px;
+}
+
+.color_lightblue{
+  background-color: lightblue;
+  border: 1px solid blue;
+}
+
+.color_lightcoral{
+  background-color: lightcoral;
+  border: 1px solid coral;
+}
+
+.color_lightgreen{
+  background-color: lightgreen;
+  border: 1px solid green;
+}
+
+.color_lightpink{
+  background-color: lightpink;
+  border: 1px solid pink;
+}
+
+/*header*/
+
+.header_top{
+  background-color: #fff;
+  height: 70px;
+}
+
+@media screen and (max-width: 768px){
+  .container{
+    margin: 0 5px;
+  }
+}
+
+/*jumbotron*/
+
+.jumbotron{
+  background-image: url('../img/bg-home-1.jpg');
+  background-size: cover;
+}
+
