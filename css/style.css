@@ -85,8 +85,15 @@
 
 /*section loghi*/
 
-#loghi{
+#loghi,
+#designed,
+#development{
   background-color: #f3f5f9;
 }
 
 /*section deploy*/
+
+#service,
+#get_started{
+  background-image: linear-gradient( #0042bb , #001e9a);
+}
