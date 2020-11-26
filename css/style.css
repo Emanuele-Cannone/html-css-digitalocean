@@ -50,6 +50,9 @@
   border: 1px solid pink;
 }
 
+.text_color_blue{
+  color: #3a8aff;
+}
 
 /*classi riutilizzabili*/
 
@@ -67,6 +70,22 @@
 .header_top{
   background-color: #fff;
   height: 70px;
+}
+
+.header_top .row{
+  line-height: 70px;
+}
+
+.header_top .row>[class*="col-"]:first-child{
+  background-image: url('https://images.prismic.io/www-static/49aa0a09-06d2-4bba-ad20-4bcbe56ac507_logo.png?auto=compress,format');
+  height: 25px;
+  background-size: 150px;
+  background-repeat: no-repeat;
+  margin-top: 23px;
+} 
+
+.header_top .row [class*="col-"]:last-child [class*="col-"]:last-child ul:last-child li:last-child .btn-default{
+  border: 1px solid #3a8aff;
 }
 
 @media screen and (max-width: 768px){
