@@ -70,6 +70,10 @@
   color: #5c6a88;
 }
 
+.vertical_middle{
+  vertical-align: middle;
+}
+
 
 /*classi riutilizzabili*/
 
@@ -103,6 +107,20 @@ body{
 
   .jumbotron h1{
     font-size: 35px;
+  }
+
+  section#deploy .row:last-child [class*="col-"]:nth-child(1n+2){
+    margin-bottom: 20px;
+  }
+
+  section#designed .row:nth-child(2) [class*="col-"]:nth-child(even){
+    background-size: 50%;
+    height: 330px;
+  }
+
+  section#designed .row:nth-child(2) [class*="col-"]:nth-child(odd){
+    font-size: 20px;
+    padding-top: 165px;
   }
 }
 
@@ -257,7 +275,8 @@ section#loghi .row:nth-child(even) [id]:last-child{
 
 /* section deploy */
 
-section#deploy p{
+section#deploy p,
+section#designed p{
   color: #5c6a88;
 }
 
@@ -273,6 +292,29 @@ section#deploy ul li{
   background-size: cover;
   height: 20px;
   width: 20px;
+}
+
+
+/*section designed*/
+
+section#designed .row:first-child >[class*="col-"] *{
+  padding-bottom: 30px;
+}
+
+section#designed .row:nth-child(2) [class*="col-"]:nth-child(even){
+  background-image: url('../img/screenshot-create-droplet-12336b41.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+section#designed .row:nth-child(2) [class*="col-"]:nth-child(odd){
+  font-size: 30px;
+  padding-top: 250px;
+}
+
+section#designed .row:nth-child(2) [class*="col-"]{
+  height: 500px;
 }
 
 
