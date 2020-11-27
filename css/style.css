@@ -34,8 +34,16 @@
   padding: 30px;
 }
 
+.pad_top_10{
+  padding-top: 10px;
+}
+
 .pad_top_30{
   padding-top: 30px;
+}
+
+.pad_bot_10{
+  padding-bottom: 10px;
 }
 
 .pad_bot_30{
@@ -60,6 +68,10 @@
 .color_lightpink{
   background-color: lightpink;
   border: 1px solid pink;
+}
+
+.text_color_white{
+  color: white;
 }
 
 .text_color_blue{
@@ -319,11 +331,33 @@ section#designed .row:nth-child(2) [class*="col-"]:nth-child(even){
   background-position: center;
 }
 
+section#designed .row:last-child p i{
+  padding: 0 10px;
+  color: #006aff;
+}
+
 /*section service*/
 
 #service,
 #get_started{
   background-image: linear-gradient( #0042bb , #001e9a);
+}
+
+section#service .row:last-child [class*="col-"] [class*="col-"]{
+  border-bottom: 1px solid white;
+  padding-top: 5px;
+}
+
+section#service .row:last-child [class*="col-"] [class*="col-"]:nth-child(3n+1){
+  color: white;
+}
+
+section#service .row:last-child [class*="col-"] [class*="col-"]:nth-child(3n+2){
+  color: #bbc5e6;
+}
+
+section#service .row:last-child a{
+  color: #00d5d2;
 }
 
 /*footer*/
