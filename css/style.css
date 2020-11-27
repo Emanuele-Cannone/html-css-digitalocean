@@ -30,6 +30,10 @@
   height: 200px;
 }
 
+.pad_30{
+  padding: 30px;
+}
+
 .color_lightblue{
   background-color: lightblue;
   border: 1px solid blue;
@@ -54,6 +58,11 @@
   color: #3a8aff;
 }
 
+.text_color_grey{
+  color: #5c6a88;
+}
+
+
 /*classi riutilizzabili*/
 
 .margin_top_0{
@@ -65,11 +74,18 @@
 }
 
 
+body{
+  font-family: 'Roboto', sans-serif;
+}
+
 /*header*/
 
 .header_top{
   background-color: #fff;
   height: 70px;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
 }
 
 .header_top .row{
@@ -106,10 +122,16 @@
   padding-left: 5px;
 }
 
-
 @media screen and (max-width: 768px){
   .container{
     margin: 0 5px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px){
+
+  .jumbotron h1{
+    font-size: 35px;
   }
 }
 
@@ -118,8 +140,66 @@
 .jumbotron{
   background-image: url('../img/bg-home-1.jpg');
   background-size: cover;
+  padding-top: 100px;
 }
 
+.jumbotron h1{
+  color: #fff;
+}
+
+.jumbotron [class*="col-"]:first-child p{
+color: #bbcdff
+}
+
+.jumbotron .row [class*="col-"]:last-child{
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.jumbotron .row [class*="col-"]:last-child h2{
+  font-size: 35px;
+}
+
+.jumbotron .row [class*="col-"]:last-child p{
+  padding-top: 5px;
+  padding-bottom: 15px;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.jumbotron .row [class*="col-"]:last-child p a{
+  text-decoration: underline;
+}
+
+.jumbotron input{
+  display: block;
+  width: 100%;
+  height: 40px;
+  margin: 20px 0;
+  border-radius: 5px;
+  border: 1px solid lightgray;
+}
+
+.jumbotron a{
+  width: 100%;
+  margin: 2px 0;
+}
+
+.jumbotron .row .create_account{
+  background-color: #579aff;
+  color: #fff;
+}
+
+.jumbotron .row .google span::before{
+  background-image: url('../img/google-icon.png');
+  height: 20px;
+  width: 20px;
+  display: inline-block;
+  content: '';
+  background-size: cover;
+  left: 20px;
+  position: absolute;
+}
 
 /*section loghi*/
 
@@ -127,6 +207,38 @@
 #designed,
 #development{
   background-color: #f3f5f9;
+}
+
+section#loghi .row:nth-child(even) [id] {
+  background-size: 90%;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100px;
+}
+
+section#loghi .row:nth-child(even) [id]:last-child{
+  background-size: 85%;
+}
+
+#docker{
+  background-image: url('../img/logo_docker.png');
+}
+
+#gitlab{
+  background-image: url('../img/logo_gitlab.png');
+}
+
+#slack{
+  background-image: url('../img/logo_slack.png');
+}
+
+#hashicorp,
+#hashicorp2{
+  background-image: url('../img/logo_hashicorp.png');
+}
+
+#splunk{
+  background-image: url('../img/logo_splunk.png');
 }
 
 /*section service*/
