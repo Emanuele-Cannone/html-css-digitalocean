@@ -34,6 +34,14 @@
   padding: 30px;
 }
 
+.pad_top_30{
+  padding-top: 30px;
+}
+
+.pad_bot_30{
+  padding-bottom: 30px;
+}
+
 .color_lightblue{
   background-color: lightblue;
   border: 1px solid blue;
@@ -73,9 +81,29 @@
   margin-bottom: 0;
 }
 
-
 body{
   font-family: 'Roboto', sans-serif;
+}
+
+
+/*media query*/
+@media screen and (max-width: 768px){
+  .container{
+    margin: 0 5px;
+  }
+}
+
+@media screen and (min-width: 768px){
+  section#deploy .row:last-child [class*="col-"]:nth-child(1n+2){
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px){
+
+  .jumbotron h1{
+    font-size: 35px;
+  }
 }
 
 /*header*/
@@ -122,19 +150,6 @@ body{
   padding-left: 5px;
 }
 
-@media screen and (max-width: 768px){
-  .container{
-    margin: 0 5px;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 992px){
-
-  .jumbotron h1{
-    font-size: 35px;
-  }
-}
-
 /*jumbotron*/
 
 .jumbotron{
@@ -163,8 +178,7 @@ color: #bbcdff
 .jumbotron .row [class*="col-"]:last-child p{
   padding-top: 5px;
   padding-bottom: 15px;
-  font-size: 15px;
-  font-weight: 400;
+  font-size: 1.5rem;
 }
 
 .jumbotron .row [class*="col-"]:last-child p a{
@@ -240,6 +254,27 @@ section#loghi .row:nth-child(even) [id]:last-child{
 #splunk{
   background-image: url('../img/logo_splunk.png');
 }
+
+/* section deploy */
+
+section#deploy p{
+  color: #5c6a88;
+}
+
+section#deploy ul li{
+  list-style: none;
+  padding: 8px;
+  border-left: 2px solid #cccccc;
+  color: #75809a;
+}
+
+.logo_piccolo{
+  background-image: url('https://prismic-io.s3.amazonaws.com/www-static/936bb585-99ba-460d-ae2f-7bbdae8896cc_stacksplusicon.svg');
+  background-size: cover;
+  height: 20px;
+  width: 20px;
+}
+
 
 /*section service*/
 
