@@ -95,11 +95,10 @@ body{
   .container{
     margin: 0 5px;
   }
-}
 
-@media screen and (min-width: 768px){
-  section#deploy .row:last-child [class*="col-"]:nth-child(1n+2){
-    margin-bottom: 20px;
+  section#designed .row:nth-child(2) [class*="col-"]:nth-child(even){
+    background-size: contain;
+    height: 330px;
   }
 }
 
@@ -114,7 +113,7 @@ body{
   }
 
   section#designed .row:nth-child(2) [class*="col-"]:nth-child(even){
-    background-size: 50%;
+    background-size: cover;
     height: 330px;
   }
 
@@ -122,6 +121,19 @@ body{
     font-size: 20px;
     padding-top: 165px;
   }
+}
+
+@media screen and (min-width: 992px){
+  section#designed .row:nth-child(2) [class*="col-"]:nth-child(odd){
+    font-size: 30px;
+    padding-top: 250px;
+  }
+  
+  section#designed .row:nth-child(2) [class*="col-"]{
+    height: 500px;
+    background-size: contain;
+  }
+
 }
 
 /*header*/
@@ -303,20 +315,9 @@ section#designed .row:first-child >[class*="col-"] *{
 
 section#designed .row:nth-child(2) [class*="col-"]:nth-child(even){
   background-image: url('../img/screenshot-create-droplet-12336b41.jpg');
-  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
-
-section#designed .row:nth-child(2) [class*="col-"]:nth-child(odd){
-  font-size: 30px;
-  padding-top: 250px;
-}
-
-section#designed .row:nth-child(2) [class*="col-"]{
-  height: 500px;
-}
-
 
 /*section service*/
 
