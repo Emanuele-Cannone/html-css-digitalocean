@@ -331,8 +331,9 @@ section#designed .row:nth-child(2) [class*="col-"]:nth-child(even){
   background-position: center;
 }
 
-section#designed .row:last-child p i{
-  padding: 0 10px;
+section#designed .row:last-child p i,
+section#development .row:last-child p i{
+  padding: 10px;
   color: #006aff;
 }
 
@@ -358,6 +359,36 @@ section#service .row:last-child [class*="col-"] [class*="col-"]:nth-child(3n+2){
 
 section#service .row:last-child a{
   color: #00d5d2;
+}
+
+/* section development */
+
+.row img{
+  width: 50%;
+  padding-top: 30px;
+}
+
+section#development .row:nth-child(2) [class*="col-"]:nth-child(even){
+  background-color: #fff;
+  height: 230px;
+}
+
+section#development .row [class*="col-"] [class*="col-"] *:not(p){
+  margin: 0 auto;
+}
+
+section#development .row:nth-child(2) i{
+  padding-top: 115px;
+}
+
+/* section get started */
+
+section#get_started h3{
+  color: white;
+}
+
+section#get_started a.btn-default{
+  color: #3a8aff;
 }
 
 /*footer*/
