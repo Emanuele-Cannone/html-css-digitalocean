@@ -8,27 +8,7 @@
 
 (≥1200px) ALTRO LG*/
 
-/*classi debug*/
-
-.h_50{
-  height: 50px;
-}
-
-.h_70{
-  height: 70px;
-}
-
-.h_100{
-  height: 100px;
-}
-
-.h_150{
-  height: 150px;
-}
-
-.h_200{
-  height: 200px;
-}
+/*classi riutilizzabili*/
 
 .pad_30{
   padding: 30px;
@@ -50,24 +30,12 @@
   padding-bottom: 30px;
 }
 
-.color_lightblue{
-  background-color: lightblue;
-  border: 1px solid blue;
+.margin_top_0{
+  margin-top: 0;
 }
 
-.color_lightcoral{
-  background-color: lightcoral;
-  border: 1px solid coral;
-}
-
-.color_lightgreen{
-  background-color: lightgreen;
-  border: 1px solid green;
-}
-
-.color_lightpink{
-  background-color: lightpink;
-  border: 1px solid pink;
+.margin_bot_0{
+  margin-bottom: 0;
 }
 
 .text_color_white{
@@ -87,15 +55,8 @@
 }
 
 
-/*classi riutilizzabili*/
 
-.margin_top_0{
-  margin-top: 0;
-}
 
-.margin_bot_0{
-  margin-bottom: 0;
-}
 
 body{
   font-family: 'Roboto', sans-serif;
@@ -303,22 +264,18 @@ section#deploy p,
 section#designed p{
   color: #5c6a88;
 }
-
 section#deploy ul li{
   list-style: none;
   padding: 8px;
   border-left: 2px solid #cccccc;
   color: #75809a;
 }
-
 .logo_piccolo{
   background-image: url('https://prismic-io.s3.amazonaws.com/www-static/936bb585-99ba-460d-ae2f-7bbdae8896cc_stacksplusicon.svg');
   background-size: cover;
   height: 20px;
   width: 20px;
 }
-
-
 /*section designed*/
 
 section#designed .row:first-child >[class*="col-"] *{
@@ -363,7 +320,7 @@ section#service .row:last-child a{
 
 /* section development */
 
-.row img{
+section#development .row img{
   width: 50%;
   padding-top: 30px;
 }
@@ -395,4 +352,39 @@ section#get_started a.btn-default{
 
 footer{
   background-color: #031c4e;
+}
+
+footer .row [class*="col-"]:first-child{
+  padding-left: 55px;
+}
+
+footer .row [class*="col-"]:first-child p{
+  margin-bottom: 0;
+}
+
+footer .row [class*="col-"]:first-child p:nth-child(even){
+  padding-top: 10px;
+}
+
+footer .row [class*="col-"]:first-child p:last-child i{
+  padding-right: 5px;
+  font-size: 20px;
+}
+
+footer img{
+  height: 50px;
+}
+
+footer ul li{
+  list-style: none;
+}
+
+footer .row [class*="col-"]:first-child,
+footer ul li a{
+  color: #a2aabb;
+}
+
+footer ul li:first-child a{
+  color: white;
+  font-size: 20px;
 }
