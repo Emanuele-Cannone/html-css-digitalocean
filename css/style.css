@@ -56,8 +56,6 @@
 
 
 
-
-
 body{
   font-family: 'Roboto', sans-serif;
 }
@@ -105,6 +103,10 @@ body{
   section#designed .row:nth-child(2) [class*="col-"]{
     height: 500px;
     background-size: contain;
+  }
+
+  section#shark .row{ 
+    float: right;
   }
 
 }
@@ -354,7 +356,7 @@ footer{
   background-color: #031c4e;
 }
 
-footer .row [class*="col-"]:first-child{
+footer .row [class*="col-"]:first-child :not(section#shark){
   padding-left: 55px;
 }
 
@@ -387,4 +389,29 @@ footer ul li a{
 footer ul li:first-child a{
   color: white;
   font-size: 20px;
+}
+
+footer .container{
+  padding-bottom: 70px;
+}
+
+
+section#shark .row{
+  position: fixed;
+  width: 100%;
+  bottom: 10px;
+}
+
+section#shark [class*="col-"]:first-child img{
+  height: 50px;
+  width: 50px;
+  background-color: blue;
+  z-index: 1;
+}
+
+section#shark [class*="col-"]:last-child p{
+  height: 50px;
+  background-color: white;
+  border-radius: 5px;
+  z-index: 1;
 }
