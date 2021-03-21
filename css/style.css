@@ -310,15 +310,19 @@ section#service .row:last-child [class*="col-"] [class*="col-"]{
 
 section#service .row:last-child [class*="col-"] [class*="col-"]:nth-child(3n+1){
   color: white;
+  text-transform: uppercase;
 }
 
 section#service .row:last-child [class*="col-"] [class*="col-"]:nth-child(3n+2){
   color: #bbc5e6;
+  text-transform: capitalize;
 }
 
 section#service .row:last-child a{
   color: #00d5d2;
+  text-transform: capitalize;
 }
+
 
 /* section development */
 
@@ -350,15 +354,18 @@ section#get_started a.btn-default{
   color: #3a8aff;
 }
 
+
+
 /*footer*/
 
 footer{
   background-color: #031c4e;
 }
 
-footer .row [class*="col-"]:first-child :not(section#shark){
-  padding-left: 55px;
+footer li a{
+  text-transform: capitalize;
 }
+
 
 footer .row [class*="col-"]:first-child p{
   margin-bottom: 0;
@@ -369,7 +376,7 @@ footer .row [class*="col-"]:first-child p:nth-child(even){
 }
 
 footer .row [class*="col-"]:first-child p:last-child i{
-  padding-right: 5px;
+  padding-right: 15px;
   font-size: 20px;
 }
 
